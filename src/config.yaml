@@ -1,0 +1,8 @@
+paths:
+  input_file: "orders.csv"
+  output_revenue_by_region: "revenue_by_region.parquet"
+  output_top_products: "top_products_by_region.parquet"
+
+processing:
+  num_records: 1000
+  random_seed: 42
