@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:15
+    container_name: shoplytics_postgres
+    environment:
+      POSTGRES_USER: shoplytics
+      POSTGRES_PASSWORD: shoplytics
+      POSTGRES_DB: shoplytics_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db:/var/lib/postgresql/data
